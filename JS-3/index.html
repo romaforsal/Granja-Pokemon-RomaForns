@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Granja Pokémon</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Bienvenido a tu Granja Pokémon Digital</h1>
+    <p>¡Gestiona y cuida tus Pokémon como un verdadero entrenador Pokémon!</p>
+  </header>
+
+  <section>
+    <h2>Registrar un nuevo Pokémon</h2>
+    <form id="pokemonForm">
+      <label>Nombre: <input type="text" id="nombre" required></label><br><br>
+      <label>Tipo: <input type="text" id="tipo" required></label><br><br>
+      <label>Nivel: <input type="number" id="nivel" min="1" max="100" required></label><br><br>
+      <label>Habilidad: <input type="text" id="habilidad" required></label><br><br>
+      <label>Fecha de llegada: <input type="date" id="fecha" required></label><br><br>
+      <button type="submit">Registrar</button>
+    </form>
+
+    <h2>Filtrar Pokémon</h2>
+    <label>Por tipo: <input type="text" id="filtroTipo"></label>
+    <label>Por habilidad: <input type="text" id="filtroHabilidad"></label>
+    <button id="filtrarBtn">Filtrar</button>
+
+    <h2>Lista de Pokémon registrados</h2>
+    <ul id="pokemonList"></ul>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>
